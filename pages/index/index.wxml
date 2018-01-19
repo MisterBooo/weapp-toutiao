@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view> 
+   <!-- 头部导航 -->
+    <view class="header">
+        <scroll-view class="sv__container" scroll-x="true" style="width: 100%" >
+            <block wx:for="{{categoryTabs}}" wx:key="type" >
+                <view 
+                    class="sv__item {{ currentTab==item.type ? 'active':'' }}" 
+                    bindtap="changeCategory" 
+                    data-type="{{ item.type }}"
+                >
+                    {{ item.lanmu_name }}
+                </view>
+            </block>
+        </scroll-view>
+    </view>
+
+
+</view>
