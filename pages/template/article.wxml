@@ -1,0 +1,12 @@
+<template name="articlStyle">
+    <view class="article__item">
+     <view class="article__info">
+       <view class="article__title">{{title}}</view>
+       <view class="article__desc">
+           <text class="article__time">{{ date }}</text>
+       </view>
+
+     </view>
+    </view>
+
+</template>
